@@ -32,3 +32,31 @@ const squr = sequre(10);
 console.log(squr);
 const squr1 = sequre(8);
 console.log(squr1);
+
+// Write a function which accepts the age and tells the user is eligible or not to vote.
+
+function eligibleToVote(age) {
+  if (age < 0) {
+    console.log(age + " Invalid age");
+  } else if (age > 18) {
+    console.log("Eligible to vote");
+  } else {
+    console.log("Not eligible to vote");
+  }
+}
+eligibleToVote(-1);
+eligibleToVote(20);
+eligibleToVote(10);
+
+// Create a funcion to check the number is even or odd
+function checkEvenOrOdd(number) {
+  const rem = number % 2;
+  if (rem == 0) {
+    console.log(number + " Is is Even number");
+  } else {
+    console.log(number + " Is is Odd number");
+  }
+}
+checkEvenOrOdd(10);
+checkEvenOrOdd(3);
+checkEvenOrOdd(25);
