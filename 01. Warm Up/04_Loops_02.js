@@ -8,7 +8,7 @@ function searchEle(arr, ele) {
   return -1;
 }
 
-let arr1 = [5, 10, -15, 200, -25, 30, 35];
+let arr1 = [5, 10, -15, 200, -25, 30, 35, 20];
 const output = searchEle(arr1, 20);
 console.log(output);
 
@@ -28,7 +28,7 @@ console.log(res);
 
 // Problem No. 03: write a function which return the largest number in an array.
 function largestNumber(arr) {
-  let largest = -Infinity;
+  let largest = -Infinity; // we can also set this value to arr[0] as well
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > largest) {
       largest = arr[i];
@@ -39,3 +39,18 @@ function largestNumber(arr) {
 
 const largestNum = largestNumber(arr1);
 console.log(largestNum);
+
+// Home work: 
+// Problem No. 04 : write function which is smallest in an array
+function smallestInAnArray(arr) {
+  let smallest = Infinity; // we can also set this value to arr[0] as well
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+      smallest = arr[i];
+    }
+  }
+  return smallest;
+}
+
+const smallestValue = smallestInAnArray(arr1);
+console.log(smallestValue);
