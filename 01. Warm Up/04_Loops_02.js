@@ -28,7 +28,7 @@ console.log(res);
 
 // Problem No. 03: write a function which return the largest number in an array.
 function largestNumber(arr) {
-  let largest = 0;
+  let largest = -Infinity;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > largest) {
       largest = arr[i];
