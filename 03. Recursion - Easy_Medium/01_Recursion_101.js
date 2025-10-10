@@ -41,3 +41,6 @@ function print(n) {
   print(n);
 }
 print(1);
+
+
+TC = O(n);
