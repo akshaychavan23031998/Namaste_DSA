@@ -26,4 +26,5 @@ console.log(res1); // -1
 const res2 = binarySearch([5], 5);
 console.log(res2); // 0
 
-// TC = O(logn);
+// TC = O(logn); ==>> logerathmic
+// SC = O(1);
