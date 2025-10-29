@@ -10,22 +10,25 @@
  * @param {number} n
  * @return {ListNode}
  */
-var removeNthFromEnd = function(head, n) {
-    let sentinel = new ListNode();
-    sentinel.next = head;
-    let length = 0;
+var removeNthFromEnd = function (head, n) {
+  let sentinel = new ListNode();
+  sentinel.next = head;
+  let length = 0;
 
-    while(head){
-        head = head.next;
-        length++;
-    }
+  while (head) {
+    head = head.next;
+    length++;
+  }
 
-    let prevPOS = length - n;
-    let prev = sentinel
-    for(let i=0; i< prevPOS; i++){
-        prev = prev.next;
-    }
-    prev.next = prev.next.next;
+  let prevPOS = length - n;
+  let prev = sentinel;
+  for (let i = 0; i < prevPOS; i++) {
+    prev = prev.next;
+  }
+  prev.next = prev.next.next;
 
-    return sentinel.next;
+  return sentinel.next;
 };
+
+// TC = O(n);
+// SC = O(n);
